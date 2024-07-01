@@ -1,6 +1,6 @@
 PATH_PROJECT_JAR = target/PoC-1.0-SNAPSHOT.jar
 PROJECT_GROUP    = br.fga.tcc1.poc
-JADE_AGENTS      = mainAgent:$(PROJECT_GROUP).HelloWorldAgent;
+JADE_AGENTS      = mainAgent:$(PROJECT_GROUP).HelloWorldAgent;AgenteColetor:$(PROJECT_GROUP).agentes.AgenteColetor;AgenteParticipativo:$(PROJECT_GROUP).agentes.AgenteParticipativo(fornece_dados);
 JADE_FLAGS 		 = -gui -agents "$(JADE_AGENTS)" -name plataforma-de-testes
 
 .PHONY:
